@@ -141,8 +141,8 @@ $ajax = function(h){
 $ready = function(f){
 	if(window.addEventListener)
 		addEventListener('DOMContentLoaded',f,!1);
-	else if(winow.attachEvent)
-		winow.attachEvent('onload',f);
+	else if(window.attachEvent)
+		window.attachEvent('onload',f);
 },
 loadLogger = function(onScreen, logLevel /*0:4*/){
 	logLevel = logLevel !==undefined ? logLevel : 3;
